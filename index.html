@@ -3,44 +3,77 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>About Me</title>
+  <title>My Portfolio</title>
   <link rel="stylesheet" href="style.css" />
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
 </head>
 <body>
   <header>
-    <h1>About Me</h1>
+    <h1>ポートフォリオ</h1>
+    <p>挑戦を楽しむ多言語×IT×会計人材</p>
     <nav>
       <ul>
-        <li><a href="index.html">Home</a></li>
+        <li><a href="#language">Language</a></li>
+        <li><a href="#it">IT</a></li>
+        <li><a href="#accounting">Accounting</a></li>
+        <li><a href="#fitness">Fitness</a></li>
+        <li><a href="about.html">About</a></li>
       </ul>
     </nav>
   </header>
 
-  <section class="about">
-    <h2>自己紹介</h2>
-    <p>
-      初めまして。私は会計学と金融を学びながら、Google Apps ScriptやPythonなどのITスキルを活かして業務効率化を追求しています。
-      英語・マレー語・スペイン語など多言語を学び、異文化理解も大切にしています。<br><br>
+  <section class="goal">
+    <h2>目標</h2>
+    <p>現代ビジネス三種の神器＋１強化</p>
+  </section>
 
-      「学ぶ → 実践する → 共有する」を軸に、常に挑戦し続ける人でありたいと思っています。
-    </p>
+  <section class="cards">
+    <div class="card language" id="language">
+      <h3>Language</h3>
+      <ul>
+        <li>English</li>
+        <li>Malay</li>
+        <li>Spanish</li>
+        <li>Japanese</li>
+      </ul>
+    </div>
 
-    <h2>スキル分野</h2>
-    <ul>
-      <li>会計・財務（ACCA取得中）</li>
-      <li>Google Apps Script 自動化ツール開発</li>
-      <li>英語コーチング・IELTS対策</li>
-      <li>ポートフォリオ＆就活システム制作</li>
-      <li>筋トレ（BIG3合計 255kg）</li>
-    </ul>
+    <div class="card it" id="it">
+      <h3>IT</h3>
+      <ul>
+        <li>Google Apps Script</li>
+        <li>Python</li>
+        <li>Excel</li>
+        <li>Google Sheets</li>
+      </ul>
+    </div>
 
-    <h2>今後の目標</h2>
-    <p>
-      ・企業での経理職としてグローバルな経験を積む<br>
-      ・生成AIと会計の融合をテーマにサービス開発<br>
-      ・留学・英語教育・キャリア支援事業の立ち上げ
-    </p>
+    <div class="card accounting" id="accounting">
+      <h3>Accounting</h3>
+      <ul>
+        <li>Majored in Accountancy and Banking and Financial Management</li>
+        <li>ACCA student (Passed 9/13)</li>
+      </ul>
+    </div>
+
+    <div class="card fitness" id="fitness">
+      <h3>Fitness</h3>
+      <ul>
+        <li>Bench Press</li>
+        <li>Squat</li>
+        <li>Deadlift</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="contact">
+    <h2>お問い合わせ</h2>
+    <p>ご連絡は <a href="mailto:yourname@example.com">メール</a> または以下のSNSからどうぞ。</p>
+    <div class="sns-links">
+      <a href="https://github.com/yourusername" target="_blank">GitHub</a>
+      <a href="https://www.linkedin.com/in/yourusername" target="_blank">LinkedIn</a>
+      <a href="https://www.instagram.com/yourusername" target="_blank">Instagram</a>
+    </div>
   </section>
 
   <footer>
