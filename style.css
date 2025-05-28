@@ -122,5 +122,22 @@ nav a:hover {
 .sns-links {
   margin-top: 1rem;
 }
+.about {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 1rem 2rem;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+.about h2 {
+  margin-top: 2rem;
+  color: #444;
+}
+
+.about p, .about ul {
+  line-height: 1.6;
+}
 
 
