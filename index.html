@@ -1,99 +1,35 @@
+<!-- 共通: ヘッダーとフッターに使い回すCSS（Tailwind CDN） -->
+<link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+
+<!-- index.html -->
 <!DOCTYPE html>
 <html lang="ja">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>My Portfolio</title>
+  <title>ポートフォリオ</title>
   <link rel="stylesheet" href="style.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
 </head>
-<body>
-  <header>
-    <h1>ポートフォリオ</h1>
-    <p>挑戦を楽しむ多言語×IT×会計人材</p>
- <nav>
-  <ul>
-    <li><a href="language.html">Language</a></li>
-    <li><a href="it.html">IT</a></li>
-    <li><a href="accounting.html">Accounting</a></li>
-    <li><a href="fitness.html">Fitness</a></li>
-    <li><a href="about.html">About</a></li>
-  </ul>
-</nav>
-
+<body class="bg-gray-100 text-gray-800">
+  <header class="bg-white shadow p-4 flex justify-between items-center">
+    <h1 class="text-xl font-bold">My Portfolio</h1>
+    <nav class="space-x-4">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="language.html">Language</a>
+      <a href="it.html">IT</a>
+      <a href="accounting.html">Accounting</a>
+      <a href="fitness.html">Fitness</a>
+    </nav>
   </header>
-
-  <section class="goal">
-    <h2>目標</h2>
-    <p>現代ビジネス三種の神器＋１強化</p>
-  </section>
-
-  <section class="cards">
-    <div class="card language" id="language">
-      <h3>Language</h3>
-      <ul>
-        <li>English</li>
-        <li>Malay</li>
-        <li>Spanish</li>
-        <li>Japanese</li>
-      </ul>
-    </div>
-
-    <div class="card it" id="it">
-      <h3>IT</h3>
-      <ul>
-        <li>Google Apps Script</li>
-        <li>Python</li>
-        <li>Excel</li>
-        <li>Google Sheets</li>
-      </ul>
-    </div>
-
-    <div class="card accounting" id="accounting">
-      <h3>Accounting</h3>
-      <ul>
-        <li>Majored in Accountancy and Banking and Financial Management</li>
-        <li>ACCA student (Passed 9/13)</li>
-      </ul>
-    </div>
-
-    <div class="card fitness" id="fitness">
-      <h3>Fitness</h3>
-      <ul>
-        <li>Bench Press</li>
-        <li>Squat</li>
-        <li>Deadlift</li>
-      </ul>
-    </div>
-  </section>
-
-  <section class="contact">
-    <h2>お問い合わせ</h2>
-    <p>ご連絡は <a href="mailto:yourname@example.com">メール</a> または以下のSNSからどうぞ。</p>
-    <div class="sns-links">
-      <a href="https://github.com/yourusername" target="_blank">GitHub</a>
-      <a href="https://www.linkedin.com/in/yourusername" target="_blank">LinkedIn</a>
-      <a href="https://www.instagram.com/yourusername" target="_blank">Instagram</a>
-    </div>
-  </section>
-
- <footer style="text-align: center; padding: 1rem; background-color: #f8f8f8;">
-  <p>© 2025 Your Name</p>
-  <div style="margin-top: 0.5rem;">
-    <a href="https://github.com/yourusername" target="_blank" style="margin: 0 10px;">
-      <img src="https://img.icons8.com/ios-filled/50/github.png" alt="GitHub" width="32" />
-    </a>
-    <a href="https://www.linkedin.com/in/yourusername/" target="_blank" style="margin: 0 10px;">
-      <img src="https://img.icons8.com/ios-filled/50/linkedin.png" alt="LinkedIn" width="32" />
-    </a>
-    <a href="https://www.instagram.com/yourusername/" target="_blank" style="margin: 0 10px;">
-      <img src="https://img.icons8.com/fluency/48/instagram-new.png" alt="Instagram" width="32" />
-    </a>
-    <a href="mailto:your@email.com" style="margin: 0 10px;">
-      <img src="https://img.icons8.com/ios-filled/50/email-open.png" alt="Email" width="32" />
-    </a>
-  </div>
-</footer>
-
+  <main class="p-8 grid grid-cols-1 md:grid-cols-2 gap-6">
+    <a href="language.html" class="bg-white p-6 rounded-xl shadow hover:shadow-xl text-center text-xl font-semibold">Language</a>
+    <a href="it.html" class="bg-white p-6 rounded-xl shadow hover:shadow-xl text-center text-xl font-semibold">IT</a>
+    <a href="accounting.html" class="bg-white p-6 rounded-xl shadow hover:shadow-xl text-center text-xl font-semibold">Accounting</a>
+    <a href="fitness.html" class="bg-white p-6 rounded-xl shadow hover:shadow-xl text-center text-xl font-semibold">Fitness</a>
+  </main>
+  <footer class="bg-gray-200 text-center py-4 mt-12">
+    <p>&copy; 2025 My Portfolio</p>
+  </footer>
 </body>
 </html>
