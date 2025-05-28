@@ -1,36 +1,42 @@
 body {
-  font-family: sans-serif;
+  font-family: 'Poppins', sans-serif;
   margin: 0;
   padding: 0;
-  background: #f4f4f4;
+  background: #f0f2f5;
   color: #333;
 }
 
 header {
-  background: #222;
+  background: #4f46e5;
   color: white;
-  padding: 2rem;
+  padding: 2rem 1rem;
   text-align: center;
 }
 
+header h1 {
+  margin: 0;
+  font-size: 2.5rem;
+}
+
 .goal {
-  padding: 1rem 2rem;
   text-align: center;
+  padding: 2rem 1rem;
   background: white;
+  margin-bottom: 1rem;
 }
 
 .cards {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
   padding: 2rem;
 }
 
 .card {
   background: white;
-  border-radius: 10px;
+  border-radius: 12px;
   padding: 1.5rem;
-  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   transition: transform 0.2s ease;
 }
 
@@ -40,12 +46,30 @@ header {
 
 .card h3 {
   margin-top: 0;
-  color: #444;
+  font-size: 1.25rem;
+}
+
+/* カテゴリーごとの色 */
+.language {
+  border-left: 5px solid #38bdf8;
+}
+
+.it {
+  border-left: 5px solid #34d399;
+}
+
+.accounting {
+  border-left: 5px solid #facc15;
+}
+
+.fitness {
+  border-left: 5px solid #fb7185;
 }
 
 footer {
   text-align: center;
   padding: 1rem;
-  background: #222;
+  background: #4f46e5;
   color: white;
+  margin-top: 2rem;
 }
